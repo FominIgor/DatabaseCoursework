@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(243, 202, 32);</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>35</y>
+     <width>244</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> font-size:28pt; color:rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Документы&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="typdoc_2">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>103</y>
+     <width>210</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+font-size:15pt; color:rgb(243, 243, 243)</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Поиск</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="whattext">
+   <property name="geometry">
+    <rect>
+     <x>554</x>
+     <y>142</y>
+     <width>210</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:15pt; 
+color:rgb(0, 0, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="what">
+   <property name="geometry">
+    <rect>
+     <x>633</x>
+     <y>184</y>
+     <width>72</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+font-size:14pt; color:rgb(243, 243, 243)</string>
+   </property>
+   <property name="text">
+    <string>Найти</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="twStaffs">
+   <property name="geometry">
+    <rect>
+     <x>42</x>
+     <y>332</y>
+     <width>726</width>
+     <height>273</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:15pt; 
+color:rgb(243, 243, 243);
+background-color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="client">
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>612</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(0, 0, 0);
+font-size:14pt; color:rgb(243, 243, 243)</string>
+   </property>
+   <property name="text">
+    <string>Сотрудники</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="otdel">
+   <property name="geometry">
+    <rect>
+     <x>326</x>
+     <y>612</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+font-size:14pt;color:rgb(243, 243, 243)</string>
+   </property>
+   <property name="text">
+    <string>Отделы</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sviz">
+   <property name="geometry">
+    <rect>
+     <x>468</x>
+     <y>612</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+font-size:14pt; color:rgb(243, 243, 243)</string>
+   </property>
+   <property name="text">
+    <string>Связ./Исполн.</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>414</x>
+     <y>102</y>
+     <width>108</width>
+     <height>144</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="open">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+font-size:14pt; color:rgb(243, 243, 243)</string>
+      </property>
+      <property name="text">
+       <string>Открыть</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="apdate">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+font-size:14pt; color:rgb(243, 243, 243)</string>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="what_5">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+font-size:14pt; color:rgb(243, 243, 243)</string>
+      </property>
+      <property name="text">
+       <string>Изменить</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="dell">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+font-size:14pt; color:rgb(243, 243, 243)</string>
+      </property>
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>26</y>
+     <width>331</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="id">
+      <property name="styleSheet">
+       <string notr="true">font-size:15pt; 
+background-color: rgb(243, 202, 32);
+color: rgb(0, 0, 0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>ID записи ,которую изменяете</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="namber">
+      <property name="styleSheet">
+       <string notr="true">font-size:15pt; 
+background-color: rgb(243, 202, 32);
+color: rgb(0, 0, 0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Номер документа</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="datestart">
+      <property name="styleSheet">
+       <string notr="true">font-size:15pt; 
+background-color: rgb(243, 202, 32);
+color: rgb(0, 0, 0)</string>
+      </property>
+      <property name="inputMask">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Дата создания ДД.ММ.ГГГГ</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="author">
+      <property name="styleSheet">
+       <string notr="true">font-size:15pt; 
+background-color: rgb(0, 0, 0);
+color:rgb(243, 243, 243)</string>
+      </property>
+      <property name="placeholderText">
+       <string notr="true"/>
+      </property>
+      <item>
+       <property name="text">
+        <string>Автор</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="typdoc">
+      <property name="styleSheet">
+       <string notr="true">font-size:15pt; 
+background-color: rgb(0, 0, 0);
+color:rgb(243, 243, 243)</string>
+      </property>
+      <property name="placeholderText">
+       <string notr="true"/>
+      </property>
+      <item>
+       <property name="text">
+        <string>Тип документа </string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="statusdoc">
+      <property name="styleSheet">
+       <string notr="true">font-size:15pt; 
+background-color: rgb(0, 0, 0);
+color:rgb(243, 243, 243)</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+      <item>
+       <property name="text">
+        <string>Статус документа</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="datefinish">
+      <property name="styleSheet">
+       <string notr="true">font-size:15pt; 
+background-color: rgb(243, 202, 32);
+color: rgb(0, 0, 0)</string>
+      </property>
+      <property name="inputMask">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Дата выполнения ДД.ММ.ГГГГ</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="comm">
+      <property name="styleSheet">
+       <string notr="true">font-size:15pt; 
+background-color: rgb(243, 202, 32);
+color: rgb(0, 0, 0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="maxLength">
+       <number>32764</number>
+      </property>
+      <property name="placeholderText">
+       <string>Комментарий</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
